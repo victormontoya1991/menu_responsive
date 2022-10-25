@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+header .menu--barmovil .slide--menu, a {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.change .linea-1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+  position: absolute;
+}
+.change .linea-2 {
+  opacity: 0;
+}
+.change .linea-3 {
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #838383;
+  text-shadow: 0 0 30px #838383;
+}
+
+body {
+  background-color: #202020;
+}
+
+header {
+  grid-area: header;
+}
+header .menu--barpc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #262528;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  padding: 0 2%;
+  min-height: 100px;
+  box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.685);
+}
+header .menu--barpc .logo {
+  width: 200px;
+}
+header .menu--barpc .logo img {
+  max-width: 150px;
+}
+header .menu--barpc .menu--principal a {
+  padding: 0 10px;
+  font-weight: 500;
+  color: white;
+}
+header .menu--barpc .top--redes a {
+  padding: 0 5px;
+}
+header .menu--barpc .top--redes a img {
+  height: 25px;
+}
+header .menu--barmovil {
+  background: #262528;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  padding: 0 2%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 94px;
+  box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.685);
+}
+header .menu--barmovil .icon--menu {
+  width: 45px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+header .menu--barmovil .icon--menu .linea-1, header .menu--barmovil .icon--menu .linea-2, header .menu--barmovil .icon--menu .linea-3 {
+  width: 45px;
+  height: 5px;
+  background-color: white;
+  margin: 4px 0px;
+  transition: 0.4s ease-out;
+}
+header .menu--barmovil .logo {
+  width: 200px;
+}
+header .menu--barmovil .logo img {
+  max-width: 150px;
+}
+header .menu--barmovil .slide--menu {
+  position: fixed;
+  top: 93px;
+  left: -100%;
+  background: #262528;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #181818;
+}
+header .menu--barmovil .slide--menu.active {
+  left: 0;
+}
+header .menu--barmovil .slide--menu .top--redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  width: 100%;
+  padding: 16px 20%;
+  margin-top: 16px;
+  margin-bottom: 5px;
+}
+header .menu--barmovil .slide--menu .top--redes a {
+  padding: 0 5px;
+}
+header .menu--barmovil .slide--menu .top--redes a img {
+  height: 25px;
+}
+header .menu--barmovil .slide--menu .menu-principal a {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding: 18px 20px;
+  border-bottom: 1px solid #181818;
+}
+
+@media all and (max-width: 931px) {
+  header .menu--barpc {
+    display: none;
+  }
+  header .menu--barmovil {
+    display: flex;
+  }
+}/*# sourceMappingURL=style.css.map */
